@@ -2,3 +2,7 @@ fastapi[all]
 pony
 pytest
 pycodestyle
+pytest-mock
+uvicorn
+pytest-asyncio
+pytest-cov

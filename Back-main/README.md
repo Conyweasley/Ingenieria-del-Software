@@ -7,8 +7,8 @@ Repositorio backend para ingeniería del software 1.
 ## Creación entorno virtual
 
 ```
-$ virtualenv <name>
-$ source ./<name>/bin/activate
+$ virtualenv venv
+$ source ./venv/bin/activate
 ```
 
 ## Instalación packages
@@ -33,4 +33,23 @@ http://127.0.0.1:8000/redoc
 
 ```
 $ deactivate
+```
+
+# Correr test
+
+```
+$ export PYTHONPATH=~/<directorio_del_proyecto>/Back
+$ pytest -vv
+```
+
+## Coverage por consola 
+
+```
+$ pytest --cov-report term-missing --cov=. tests/
+```
+
+## Coverage por html
+
+```
+$ pytest --cov-report html --cov=. tests/
 ```
